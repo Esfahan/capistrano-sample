@@ -1,4 +1,4 @@
-server '192.168.33.11', user: 'cap', roles: %w{app}
+server '192.168.33.11', user: 'rails-app', roles: %w{app}
 
 set :ssh_options, {
   port: 22,
@@ -8,4 +8,4 @@ set :ssh_options, {
 
 set :deploy_target, 'app'
 set :branch, :master
-set :deploy_to, '/home/cap'
+set :deploy_to, '/home/rails-app'
